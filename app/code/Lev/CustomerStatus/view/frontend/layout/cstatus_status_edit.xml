@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Change Status</title>
+    </head>
+    <referenceContainer name="content">
+        <block class="Lev\CustomerStatus\Block\Edit" name="status_edit" template="Lev_CustomerStatus::edit.phtml" />
+    </referenceContainer>
+</page>

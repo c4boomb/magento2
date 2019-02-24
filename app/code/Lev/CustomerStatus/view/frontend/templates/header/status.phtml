@@ -1,0 +1,24 @@
+<?php
+/** @var Magento\Customer\Block\Account\Customer $block */
+?>
+<?php if ($block->customerLoggedIn()): ?>
+    <li>
+    <span class="customer-status"
+          data-bind="scope: 'customer'">
+        Status: <span data-bind="text: customer().customer_status"></span>
+    </span>
+        <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "customer": {
+                            "component": "Magento_Customer/js/view/customer"
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+    </li>
+<?php endif; ?>

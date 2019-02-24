@@ -1,0 +1,9 @@
+<?php
+/** @var Lev\CustomerStatus\Block\Edit $block */
+?>
+<form action="<?php echo $block->getActionUrl() ?>" method="POST">
+    <label for="cstatus">Status:</label>
+    <input id="cstatus" name="status" type="text">
+    <input type="hidden" name="form_key" value="<?php echo $block->getFormKey() ?>"/>
+    <input type="Submit" value="Save">
+</form>
